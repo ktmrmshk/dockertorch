@@ -13,3 +13,6 @@ RUN pip install -U pip &&\
   
 RUN pip install -U pip &&\
   pip install --upgrade --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+CMD jupyter-lab --allow-root --ip="0.0.0.0" --NotebookApp.token=''
+
