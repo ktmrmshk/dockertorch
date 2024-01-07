@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
  && rm -rf /var/lib/apt/lists/*
  
 RUN pip install -U pip &&\
-  pip install --upgrade --no-cache-dir numpy pandas jupyterlab delta-spark delta-sharing PyArrow 
+  pip install --upgrade --no-cache-dir numpy pandas jupyterlab delta-spark delta-sharing PyArrow matplotlib
   
 RUN pip install -U pip &&\
   pip install --upgrade --no-cache-dir torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
