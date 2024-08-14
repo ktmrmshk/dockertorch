@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -y \
     openjdk-17-jre-headless \
     curl \
     htop \
+    libsndfile-dev \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
