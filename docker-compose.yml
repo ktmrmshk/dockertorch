@@ -1,0 +1,19 @@
+services:
+  dtorch:
+    image: dockertorch
+    container_name: dtorch
+    #ports:
+      #- "8888:8888"
+    volumes:
+      #- "./:/data"
+      - dockertorch-vol:/data
+
+    networks:
+      - prodnet_dc
+
+volumes:
+  dockertorch-vol:
+networks:
+  prodnet_dc:
+    name: prodnet
+    external: true
