@@ -1,6 +1,7 @@
 services:
   dtorch:
     image: dockertorch
+    restart: always
     container_name: dtorch
     #ports:
       #- "8888:8888"
